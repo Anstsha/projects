@@ -68,8 +68,6 @@ body{
 		}
 	}
 	&__founder {
-		background: url('/images/founder/bg.jpg') no-repeat;
-		background-size: cover;
 		padding: 0 15px;
 	}
 }
@@ -150,14 +148,6 @@ body{
 
 .item {
 	flex: 0 1 50%;
-	&-01{
-		background: url('/images/desc/01.jpg') no-repeat;
-		background-size: cover;
-	}
-	&-02{
-		background: url('/images/desc/02.jpg') no-repeat;
-		background-size: cover;
-	}
 	&__content {
 		margin: 310px 0px 0px 0px;
 		text-align: center;
