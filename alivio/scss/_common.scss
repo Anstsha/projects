@@ -1,0 +1,63 @@
+.btn {
+	background: #01996D;
+	border: 1px solid #01996D;
+	border-radius: 4px;
+	line-height: 125%;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 13px 50px;
+	width: 183px;
+	transition: background-color 0.3s ease;
+	&:hover{
+		background-color: #248176;
+	}
+	&__empty {
+		background-color: #FFFFFF;
+		color: rgb(0, 0, 0);
+		border: 1px solid #FFFFFF;
+		transition: background-color 0.3s ease;
+		&:hover{
+			border: 1px solid #c3c3c3;
+			background-color: #fff;
+		}
+	}
+	&__white-h {
+		&:hover{
+			color: #248176;
+			background-color: #fff;
+		}
+	}
+	&-bg{
+		padding: 20px 50px;
+	}
+}
+button{
+	background-color: #fff;
+}
+
+.subtitle {
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 157%;
+	color: #424242;
+}
+.title {
+	font-family: 'Georgia';
+	font-weight: 700;
+	font-size: 3.125rem;
+	line-height: 157%;
+}
+@media(max-width: 767.98px){
+	.btn{
+		padding: 11px 35px;
+		width: 135px;
+		margin: 0px 0px 0px 3px;
+	}
+	.title {
+		font-size: 35px;
+		line-height: 140%;
+	}
+	.subtitle {
+		font-size: 1.25rem;
+	}
+}
