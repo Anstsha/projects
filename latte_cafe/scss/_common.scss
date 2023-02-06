@@ -1,0 +1,41 @@
+.title {
+	font-family: 'Azeret Mono';
+	font-weight: 700;
+	font-size: 1.0625rem;
+	line-height: 127%;
+	color: #222222;
+}
+.text{
+	font-family: 'Inter';
+	font-size: 2rem;
+	line-height: 140%;
+	color: #222222;
+	text-align: center;
+}
+.btn {
+	padding: 17px 0px;
+	text-align: center;
+	border: 2px solid #6F6F64;
+	background-color: #E9E9E3;
+	color: #6F6F64;
+	transition: background-color 0.3s ease;
+	&:hover{
+		background-color: #d6d6cd;
+	}
+}
+.btn.active {
+	padding: 17px 0px;
+	text-align: center;
+	background-color: #6F6F64;
+	color: #ffffff;
+}
+@media (max-width: 767.98px) {
+	.text{
+		font-size: 1.125rem;
+	}
+}
+@media(max-width: 991.98px){
+	.btn{
+		max-width: 100%;
+	}
+}
