@@ -227,10 +227,12 @@ body {
 }
 .ibg {
   position: relative;
-  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.ibg.fixed-background {
+  background-attachment: fixed;
 }
 .ibg img {
   width: 0;
