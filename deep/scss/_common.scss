@@ -1,0 +1,120 @@
+.page {
+
+	&__main {
+	}
+	&__about {
+		padding: rem(150) rem(0);
+		@media (max-width: em(1200)){
+			padding: rem(70) rem(0);
+		}
+		@media (max-width: em(991.98)){
+			padding: rem(50) rem(0) rem(0) rem(0);
+		}
+	}
+	&__services {
+	}
+	&__works {
+		padding: rem(146) rem(0);
+		@media (max-width: em(1200)){
+		  padding: rem(50) rem(0) rem(0) rem(0);
+		}
+		@media (max-width: em(767.98)){
+			padding: rem(30) rem(0) rem(0) rem(0);
+		 }
+	}
+	&__team {
+		padding: rem(29) rem(0);
+	}
+	
+	&__contacts {
+		padding: rem(119) rem(0) rem(0) rem(0);
+		@media (max-width: em(1200)){
+			padding: rem(50) rem(0) rem(0) rem(0);
+		 }
+		 @media (max-width: em(767.98)){
+			 padding: rem(30) rem(0) rem(0) rem(0);
+		  }
+	}
+}
+//========================================================================================================================================================
+
+.content-header {
+
+	&__label {
+		font-size: rem(16);
+		&:not(:last-child) {
+			margin-bottom: rem(7);
+		}
+		opacity: 0;
+		transform: translate(0, rem(10));
+		transition: all 0.6s ease 0.5s;
+		&.watched{
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+	}
+
+	&__title {
+		font-size: rem(56);
+		font-family: 'Overpass';
+		font-weight: 700;
+		@media (max-width: em(991.98)){
+			font-size: rem(44);
+		}
+		opacity: 0;
+		transform: translate(0, rem(10));
+		transition: all 0.6s ease 0.7s;
+		&.watched{
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+
+	}
+	&_center {
+		text-align: center;
+	}
+}
+.text {
+	line-height: 2;
+	p{
+		&:not(:last-child) {
+			margin-bottom: rem(30);
+			@media (max-width: em(767.98)){
+				margin-bottom: rem(15);
+			}
+		}
+	}
+}
+.button {
+	display: inline-block;
+	border-radius: 3px;
+	background-color: #FFF;
+	box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.30);
+	padding: rem(19) rem(46);
+	text-align: center;
+	color: $darkPurple;
+	font-size: rem(18);
+	font-weight: 600;
+	line-height: 1.77;
+	cursor: pointer;
+	transition: all 0.4s;
+	@media (any-hover: hover){
+		&:hover{
+			color: #FFF;
+			background-color: $darkPurple;
+		}
+	}
+	&_purple{
+		background-color: $purple;
+		color: #FFF;
+		@media (any-hover: hover){
+			&:hover{
+				color: $darkPurple;
+				background-color: #FFF;
+			}
+		}
+	}
+	@media (max-width: em(767.98)){
+		width: 100%;  
+	}
+}
