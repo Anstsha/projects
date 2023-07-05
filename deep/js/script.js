@@ -31,3 +31,16 @@ items.forEach(item => {
 	observer.observe(item);
 
 });
+
+let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+const classIbg = document.querySelector('.ibg');
+
+if (isIOS && isSafari) {
+	// iOS Safari: Do not add background-attachment: fixed
+	classIbg.classList.add('ios-safari');
+} else {
+	// Not iOS Safari: Add background-attachment: fixed
+	classIbg.classList.add('fixed-background');
+}
