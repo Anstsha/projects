@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Catalog</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230714231627">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top top-header">
+					<button type="button" class="icon-menu"><span></span></button>
+					<div class="top-header__location _icon-location">London</div>
+					<a href="home.html" class="top-header__logo _icon-logo"></a>
+					<div class="top-header__actions">
+						<a href="#" class="top-header__search _icon-search"></a>
+						<button class="top-header__cart _icon-cart"></button>
+					</div>
+				</div>
+				<div class="header__down down-header">
+					<div class="down-header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">Flowers</a></li>
+								<li class="menu__item"><a href="catalog.html" class="menu__link">Plants</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Gifts</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Disconts</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page__inner">
+			<section class="page__cart cart">
+				<div class="cart__body">
+					<div class="cart__header header-cart">
+						<h2 class="header-cart__title">Your cart</h2>
+						<button type="button" class="cart-close"></button>
+					</div>
+					<div class="cart__items">
+						<div class="cart__item item-cart">
+							<div class="item-cart__image">
+								<picture><source srcset="img/relevant/rose-roses-in-vase.webp" type="image/webp"><img src="img/relevant/rose-roses-in-vase.jpg" alt="Pink roses"></picture>
+							</div>
+							<div class="item-cart__body">
+								<div class="item-cart__title">Pink roses, 25 pc.</div>
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+							</div>
+							<div class="item-cart__price">67$</div>
+						</div>
+						<div class="cart__item item-cart">
+							<div class="item-cart__image">
+								<picture><source srcset="img/relevant/red-tulips.webp" type="image/webp"><img src="img/relevant/red-tulips.jpg" alt="Red tulips"></picture>
+							</div>
+							<div class="item-cart__body">
+								<div class="item-cart__title">Red tulips, 25 pc.</div>
+								<div data-quantity class="quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-value autocomplete="off" type="text" name="form[]" value="2">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+							</div>
+							<div class="item-cart__price">92$</div>
+						</div>
+					</div>
+					<div class="cart__actions">
+						<form action="#" class="cart__form form-cart">
+							<input autocomplete="off" type="text" name="promocode" placeholder="Add promocode" class="form-cart__input">
+							<button class="form-cart__button button button_white">Apply</button>
+						</form>
+					</div>
+					<div class="cart__total total-cart">
+						<div class="total-cart__line">
+							<div class="total-cart__title">Shipping</div>
+							<div class="total-cart__result">FREE</div>
+						</div>
+						<div class="total-cart__line">
+							<div class="total-cart__title">Total</div>
+							<div class="total-cart__result">159$</div>
+						</div>
+					</div>
+					<div class="cart__action">
+						<a href="checkout.html" class="cart__button button _icon-arrow">Checkout</a>
+					</div>
+				</div>
+			</section>
+			<div class="page__container">
+				<nav class="page__breadcrumbs breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Home</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current">Cart</span>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="page__title">Checkout</h1>
+			</div>
+			<div class="page__checkout checkout">
+				<div class="checkout__container">
+					<div class="checkout__info info-checkout">
+						<div class="info-checkout__breadcrumbs breadcrumbs-checkout">
+							<ol class="breadcrumbs-checkout__list">
+								<li class="breadcrumbs-checkout__item">
+									<span class="breadcrumbs-checkout__prev">Contacts</span>
+								</li>
+								<li class="breadcrumbs-checkout__item"><span class="breadcrumbs-checkout__current">Shiping</span></li>
+								<li class="breadcrumbs-checkout__item">
+									<span class="breadcrumbs-checkout__next">Payment</span>
+								</li>
+							</ol>
+						</div>
+						<form action="#" class="info-checkout__form form">
+							<div class="form__row radios">
+								<div class="form__label label">Delivery method</div>
+								<div class="form__line ">
+									<div class="radios__item">
+										<input type="radio" name="delivery" id="pickup" class="radios__input">
+										<label for="pickup" class="radios__label-input label-input">
+											<span>
+												<span class="label-input__title">Pick up</span>
+												<span class="label-input__desc">Today, pickup is available in 4 stores</span>
+											</span>
+										</label>
+										<div class="radios__price">FREE</div>
+									</div>
+								</div>
+								<div class="form__line">
+									<div class="radios__item">
+										<input type="radio" checked name="delivery" id="courier" class="radios__input">
+										<label for="courier" class="radios__label-input label-input">
+											<span>
+												<span class="label-input__title">Courier</span>
+												<span class="label-input__desc">Tomorrow</span>
+											</span>
+										</label>
+										<div class="radios__price">FREE</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__label label">Delivery address</div>
+								<div class="form__lines">
+									<div class="form__line city">
+										<select name="form[]" data-class-modif="checkout">
+											<option value="1" selected>London</option>
+											<option value="2">Oxford</option>
+											<option value="3">Cambridge</option>
+											<option value="4">Liverpool</option>
+										</select>
+									</div>
+									<div class="form__line address">
+										<input autocomplete="off" type="text" name="address" placeholder="Address" class="form__input">
+									</div>
+								</div>
+							</div>
+							<div class="form__row">
+								<div class="form__label label">Date & time</div>
+								<div class="form__lines">
+									<div class="form__line date">
+										<input data-datepicker type="text" class="form__input" name="" placeholder="Date">
+									</div>
+									<div class="form__line time">
+										<select name="form[]" data-class-modif="checkout">
+											<option value="1" selected>8:00 - 12:00</option>
+											<option value="2">13:00 - 16:00</option>
+											<option value="3">17:00 - 20:00</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form__row actions-form">
+								<a href="#" class="form__button button button_empty _icon-arrow">Back step</a>
+								<button type="submit" class="form__button button _icon-arrow">Payment</button>
+							</div>
+						</form>
+					</div>
+					<div data-da=".info-checkout, 992, 1" class="checkout__order order-checkout">
+						<div class="order-checkout__body">
+							<div class="order-checkout__info info">
+								<div class="info__count">Order total (<span>1</span>)</div>
+								<button class="info__button button_empty">Edit</button>
+							</div>
+							<div class="order-checkout__item item-checkout">
+								<div class="item-checkout__image">
+									<picture><source srcset="img/relevant/rose-roses-in-vase.webp" type="image/webp"><img src="img/relevant/rose-roses-in-vase.jpg" alt="Roses"></picture>
+								</div>
+								<div class="item-checkout__quantity">
+									<div class="item-checkout__title">Pink roses</div>
+									<div data-quantity class="quantity">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+										<div class="quantity__input">
+											<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+									</div>
+								</div>
+								<div class="item-checkout__price">67$</div>
+							</div>
+							<div class="order-checkout__total total-checkout">
+								<div class="total-checkout__line">
+									<div class="total-checkout__title">Shipping</div>
+									<div class="total-checkout__result">FREE</div>
+								</div>
+								<div class="total-checkout__line">
+									<div class="total-checkout__title">Order total</div>
+									<div class="total-checkout__result">67 $</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-spollers="767,max" class="footer__upper upper-footer">
+					<div class="upper-footer__contacts">
+						<div class="upper-footer__title">Follow us</div>
+						<a href="tel:+4480035535NN" class="upper-footer__phone">+44 8003 5535NN</a>
+						<div class="upper-footer__social">
+							<a href="#" class="upper-footer__net _icon-inst"></a>
+							<a href="#" class="upper-footer__net _icon-vb"></a>
+							<a href="#" class="upper-footer__net _icon-fb"></a>
+						</div>
+					</div>
+					<details class="upper-footer__column">
+						<summary class="upper-footer__title _spoller-title">Help</summary>
+						<ul class="upper-footer__list">
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Contact us</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Delivery information</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Payment information</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Customer service</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">FAQ</a></li>
+						</ul>
+					</details>
+					<details class="upper-footer__column">
+						<summary class="upper-footer__title _spoller-title">About us</summary>
+						<ul class="upper-footer__list">
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Our stores</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Flower care</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Site map</a></li>
+						</ul>
+					</details>
+					<details class="upper-footer__column">
+						<summary class="upper-footer__title _spoller-title">Legal</summary>
+						<ul class="upper-footer__list">
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Privacy policy</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Terms & Conditions</a></li>
+							<li class="upper-footer__item"><a href="#" class="upper-footer__link">Cookie policy</a></li>
+						</ul>
+					</details>
+				</div>
+				<div class="footer__lower lower-footer">
+					<div class="lower-footer__copyrights">© Copyright, 2023</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230714231627"></script>
+</body>
+
+</html>
