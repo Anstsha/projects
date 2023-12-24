@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title></title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 class="wrapper__ask">Може зустрінемось сьогодні?</h1>
+		<div class="wrapper__image">
+			<img
+				src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGM3NnRtNmNxamdkanZ3dmlsbXVoOGx4NTMyazFybHJtdG9sOWdydCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+				alt="">
+		</div>
+		<div class="wrapper__actions">
+			<a href="yes.html" class="wrapper__yes button">Так</a>
+			<button id="noButton" class="wrapper__no button" onclick="moveButton()">Ні</button>
+		</div>
+
+		<script>
+			function moveButton() {
+				let no = document.getElementById('noButton');
+				let rect = no.getBoundingClientRect();
+				let noWidth = no.offsetWidth;
+				let noHeight = no.offsetHeight;
+				const width = window.innerWidth;
+				const height = window.innerHeight;
+				var x = Math.random() * 100 + 1;
+				var y = Math.random() * 100 + 1;
+				no.style.left = `${x}px`;
+				no.style.top = `${y}px`;
+			}
+		</script>
+	</div>
+</body>
+
+</html>
