@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.wrapper {
+    padding: 40px 16px;
+    min-height: 100svh;
+    font-family: 'Inter';
+}
+.top {
+}
+.ticket {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    box-shadow: 0px 4px 5px 0px #e5e5e5;
+    border-radius: 8px;
+
+}
+.title {
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.title img{
+    width: 20px;
+    height: 20px;
+}
+
+.title p{
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.toggle {
+    position: relative;
+    margin-bottom: 16px;
+}
+.city-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ticket-img-wrapper {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 5px 0px #e5e5e5;
+    max-width: 140px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.ticket-img-wrapper img{
+    width: 78px;
+}
+.wagon-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.wagon-text {
+    font-size: 14px;
+    color: #757575;
+}
+.trip-info {
+    display: flex;
+    justify-content: space-between;
+}
+.ticket-time-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.main-ticket {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4ea524;
+    position: absolute;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 168px;
+    top: 2px;
+    left: 2px;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 12px 60px;
+}
+.full-ticket {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 60px;
+    height: 38px;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    background-color: #ebebeb;
+    border-radius: 20px;
+
+}
+.img-wrapper {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 5px 0px #e5e5e5;
+}
+.img-wrapper img{
+    width: 40px;
+    height: 54px;
+}
+
+.city-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #212121;
+}
+.city-text span{
+    font-weight: 600;
+}
+
+.wagon-number {
+    color: #212121;
+    font-size: 20px;
+}
+.trip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+}
+.ticket-info-title {
+    font-size: 14px;
+    color: #4ea524;
+}
+.ticket-timer {
+    color: #4ea524;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.trip-title {
+    font-size: 16px;
+    color: #757575;
+}
+.trip-content {
+    font-size: 16px;
+    color: #212121;
+}
+
+button{
+    width: 100%;
+    background-color: #4ea524;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
