@@ -209,6 +209,7 @@ button {
 .ticket-info-title {
     font-size: 14px;
     color: #4ea524;
+    letter-spacing: .5px
 }
 .ticket-timer {
     color: #4ea524;
